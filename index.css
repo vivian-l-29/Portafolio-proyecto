@@ -1,9 +1,3 @@
   .texto{
     margin-left: 5rem;
   }
-  .seccion {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    margin-right: 10rem;
-  }
