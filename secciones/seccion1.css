@@ -1,112 +1,78 @@
+/* Estilos generales (no se modifican) */
 .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 300px;
-    gap: 40px;
-    flex-wrap: wrap;
-  }
-  
-  .hero-text {
-    max-width: 50%;
-  }
-  
-  .tagline {
-    font-size: 19px;
-    color: #2D2D2D;
-    margin-bottom: 45px;
-    margin-top: 180px;
-  }
-  
-  h1 {
-    font-size: 80px;
-    font-weight: bold;
-    line-height: 1;
-    margin-bottom: 60px;
-    color: #2D2D2D;
-  }
-  
-  .subtext {
-    color: #2D2D2D;
-    font-size: 16px;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 300px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
 
-  .shapes .shape{
-    position: relative;
-    top: 100px;
-    right: 20px;
+.hero-text {
+  max-width: 50%;
+}
+
+.tagline {
+  font-size: 19px;
+  color: #2D2D2D;
+  margin-bottom: 45px;
+  margin-top: 180px;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 60px;
+  color: #2D2D2D;
+}
+
+.subtext {
+  color: #2D2D2D;
+  font-size: 16px;
+}
+
+.shapes .shape {
+  position: relative;
+  top: 100px;
+  right: 20px;
+}
+
+/* ===================== */
+/* ✅ Responsive sin cambiar tamaños */
+/* ===================== */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
   }
-  /* ===================== */
-  /* ✅ RESPONSIVE LAPTOPS Y TABLETS */
-  /* ===================== */
-  @media (max-width: 1024px) {
-    .hero {
-      padding: 60px 50px;
-      gap: 20px;
-    }
-  
-    .hero-text {
-      max-width: 100%;
-      text-align: center;
-    }
-  
-    .shapes {
-      margin-right: 0;
-      justify-content: center;
-      display: flex;
-    }
-  
-    h1 {
-      font-size: 60px;
-    }
+
+  .hero-text {
+    max-width: 100%;
+    margin-top: 100px; /* conserva separación */
+  }
+  .menu-icon {
+    display: none;
+    width: 32px;
+    height: auto;
+    cursor: pointer;
   }
   
-  @media (max-width: 1024px) {
-    .hero {
-      flex-direction: column;
+  @media (max-width: 768px) {
+    .acciones {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .encabezado {
+      padding: 20px;
+      justify-content: space-between;
       align-items: center;
-      padding: 60px 40px;
-    }
-  
-    .hero-text {
-      max-width: 100%;
-      text-align: center;
-    }
-  
-    .shapes {
-      justify-content: center;
-      margin-top: 40px;
-    }
-  
-    .shape-img {
-      width: 80%;
-    }
-  
-    h1 {
-      font-size: 60px;
     }
   }
-  
-  @media (max-width: 600px) {
-    .hero {
-      padding: 40px 20px;
-    }
-  
-    h1 {
-      font-size: 40px;
-    }
-  
-    .tagline {
-      margin-top: 40px;
-    }
-  
-    .shapes {
-      justify-content: center;
-    }
-  
-    .shape-img {
-      width: 100%;
-    }
-  }
-  
+}

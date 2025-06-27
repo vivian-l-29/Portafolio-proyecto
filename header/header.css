@@ -1,11 +1,12 @@
 .encabezado {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 30px;
-    background-color: white;
-    font-family: sans-serif;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
   
   .logo-menu {
     display: flex;
@@ -41,4 +42,34 @@
     color: #000000;
   }
 
-  
+  /* Oculta el ícono en escritorio */
+.menu-icon {
+  display: none;
+  width: 20px; /* ajusta al tamaño de tu imagen */
+  height: auto;
+  cursor: pointer;
+}
+
+/* Header responsivo */
+@media (max-width: 768px) {
+  .acciones {
+    display: none; /* oculta los enlaces */
+  }
+
+  .menu-icon {
+    display: block; /* muestra la imagen del icono */
+  }
+
+  .encabezado {
+    padding: 20px;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 600px) {
+  .tagline {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}
+

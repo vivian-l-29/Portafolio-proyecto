@@ -1,0 +1,80 @@
+.footer {
+    padding: 160px 80px; /* más alto */
+    font-family: sans-serif;
+    background-color: #ffffff;
+  }
+  
+  .footer-content {
+    border-top: 1px solid #ccc; /* la línea divisora */
+    padding-top: 80px;          /* más espacio sobre el contenido */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 80px;                  /* más separación entre columnas */
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .footer-left {
+    max-width: 500px;
+  }
+  
+  .footer-left h2 {
+    font-size: 36px;           /* un poco más grande el título */
+    color: #2D2D2D;
+    margin-bottom: 30px;
+  }
+  
+  .footer-left p {
+    font-size: 18px;           /* texto más grande */
+    color: #333;
+    line-height: 1.8;          /* más altura de línea */
+    margin-bottom: 40px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 24px;                 /* más espacio entre iconos */
+  }
+  
+  .social-icons img {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    min-width: 300px;
+    flex: 1;
+  }
+  
+  .fake-input {
+    background-color: #f2f2f2;
+    padding: 20px;             /* más alto */
+    color: #999;
+    font-size: 16px;
+  }
+  
+  .fake-textarea {
+    background-color: #f2f2f2;
+    padding: 20px;
+    color: #999;
+    font-size: 16px;
+    min-height: 300px; /* ✅ más alto que antes */
+  }
+  
+  
+  .fake-button {
+    background-color: #2D2D2D;
+    font-weight: bold; 
+    color: white;
+    padding: 25px 75px;        /* más ancho y cómodo */
+    font-size: 20px;
+    text-align: center;
+    width: fit-content;
+    align-self: flex-start;
+    cursor: default;
+  }
+  

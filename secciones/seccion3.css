@@ -1,3 +1,45 @@
-.trabajos{
-    align-items: center;
-}
+.latest-work {
+    padding: 150px 40px;
+    font-family: sans-serif;
+  }
+  
+  .latest-work h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2D2D2D;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 👈 Exactamente 3 columnas */
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  
+  .project {
+    text-align: left;
+  }
+  
+  .project img {
+    width: 80%;        /* 👈 Reduce el tamaño al 80% del ancho del contenedor */
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: block;
+  }
+  
+  
+  .project h3 {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #2D2D2D;
+  }
+  
+  .project p {
+    font-size: 14px;
+    color: #2D2D2D;
+  }
+  
