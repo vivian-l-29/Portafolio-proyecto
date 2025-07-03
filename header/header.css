@@ -1,75 +1,63 @@
+/* Estilos base escritorio */
 .encabezado {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  position: relative;
-  top: 0;
+  padding: 20px 20px;
   width: 100%;
+  box-sizing: border-box;
 }
-  
-  .logo-menu {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-left: 10px;
-  }
-  
-  .logo-texto {
-    color: #000000;
-    font-size: 20px;
-    font-weight: 600; 
-    margin-left: 1rem;
-  }
 
-  .acciones {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    margin-right: 30px;
-  }
-  
-  .accion {
-    display: flex;
-    align-items: center;
-    gap: 1px;
-    color: black;
-    font-size: 15px;
-  }
-  
+.logo-menu {
+  display: flex;
+  align-items: center;
+}
 
-  .accion .text{
-    color: #000000;
-  }
+.logo-texto {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+}
 
-  /* Oculta el ícono en escritorio */
-.menu-icon {
+.acciones {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.accion .text {
+  color: #000;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* El icono de menú NO aparece en escritorio */
+.menu-icono-link {
   display: none;
-  width: 20px; /* ajusta al tamaño de tu imagen */
-  height: auto;
-  cursor: pointer;
 }
 
-/* Header responsivo */
+/* Estilos solo para móvil */
 @media (max-width: 768px) {
   .acciones {
-    display: none; /* oculta los enlaces */
+    display: none; /* Ocultar enlaces */
   }
 
-  .menu-icon {
-    display: block; /* muestra la imagen del icono */
+  .menu-icono-link {
+    display: block; /* Mostrar icono de menú */
+  }
+
+  .menu-icono {
+    width: 24px;
+    height: auto;
+    cursor: pointer;
+  }
+
+  .logo-texto {
+    font-size: 18px;
   }
 
   .encabezado {
     padding: 20px;
-    justify-content: space-between;
   }
 }
-
-@media (max-width: 600px) {
-  .tagline {
-    margin-top: 10px;
-    font-size: 14px;
-  }
-}
-

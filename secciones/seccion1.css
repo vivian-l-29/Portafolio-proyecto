@@ -1,5 +1,4 @@
-/* Estilos generales (no se modifican) */
-.hero {
+.portada {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,11 +7,11 @@
   flex-wrap: wrap;
 }
 
-.hero-text {
+.texto-portada {
   max-width: 50%;
 }
 
-.tagline {
+.etiqueta {
   font-size: 19px;
   color: #2D2D2D;
   margin-bottom: 45px;
@@ -27,52 +26,51 @@ h1 {
   color: #2D2D2D;
 }
 
-.subtext {
+.subtexto {
   color: #2D2D2D;
   font-size: 16px;
 }
 
-.shapes .shape {
+.formas .forma {
   position: relative;
   top: 100px;
   right: 20px;
 }
 
-/* ===================== */
-/* ✅ Responsive sin cambiar tamaños */
-/* ===================== */
 @media (max-width: 768px) {
-  .hero {
+  .portada {
     flex-direction: column;
     align-items: center;
-    padding: 40px 20px;
+    justify-content: center;
     text-align: center;
+    padding: 60px 20px;
+    gap: 30px;
   }
 
-  .hero-text {
+  .texto-portada {
     max-width: 100%;
-    margin-top: 100px; /* conserva separación */
   }
-  .menu-icon {
-    display: none;
-    width: 32px;
-    height: auto;
-    cursor: pointer;
+
+  .etiqueta {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
-  
-  @media (max-width: 768px) {
-    .acciones {
-      display: none;
-    }
-  
-    .menu-icon {
-      display: block;
-    }
-  
-    .encabezado {
-      padding: 20px;
-      justify-content: space-between;
-      align-items: center;
-    }
+
+  h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+  }
+
+  .subtexto {
+    font-size: 16px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .formas .forma {
+    position: static;
+    width: 250px;
   }
 }

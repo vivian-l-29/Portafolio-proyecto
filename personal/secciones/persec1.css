@@ -1,0 +1,113 @@
+.about {
+  background-color: #F9E6F0; 
+  padding: 190px 350px;
+}
+
+.contenido-sobre-mi {
+  display: flex;
+  align-items: center;
+  gap: 190px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.foto-perfil {
+  width: 200px;
+  height: auto;
+  border: 2px solid #000;
+}
+
+.informacion-foto {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.texto-sobre-mi h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.texto-sobre-mi p {
+  font-size: 16px;
+  color: #333;
+  max-width: 450px;
+  line-height: 1.5;
+}
+
+.texto-biografia {
+  max-width: 920px;
+  margin: 20px auto;
+  margin-top: 150px;
+  font-family: sans-serif;
+  color: #2D2D2D;
+  line-height: 1.6;
+}
+
+.texto-biografia .introduccion-divertida {
+  font-size: 30px;
+  font-weight: 520;
+  margin-bottom: 30px;
+}
+
+.texto-biografia .destacado {
+  background-color: #009379;
+  color: #F6DCE9;
+  padding: 10px 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  margin: 29px 0;
+  font-size: 20px;
+}
+
+.texto-biografia .parrafo-normal {
+  margin: 25px 0;
+  font-size: 17px;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 100px 40px; /* Parte rosada: padding lateral generoso */
+    margin-bottom: 80px; /* Más separación abajo */
+  }
+
+  .contenido-sobre-mi {
+    flex-direction: column;  /* Cambia a columna */
+    gap: 120px;               /* Más separación entre foto y texto */
+    align-items: flex-start; /* Alineado a la izquierda */
+    text-align: left;        /* Textos alineados a la izquierda */
+  }
+
+  .foto-perfil {
+    width: 180px;
+  }
+
+  .texto-sobre-mi {
+    max-width: 100%;
+  }
+
+  .texto-sobre-mi p {
+    max-width: 100%;
+  }
+
+  .texto-biografia {
+    padding: 0 60px;       /* MÁS padding lateral => menos ancho útil */
+    margin-top: 120px;     /* Separación superior generosa */
+    margin-bottom: 80px;   /* Más separación inferior */
+    text-align: left;
+  }
+
+  .texto-biografia .introduccion-divertida {
+    font-size: 24px;
+  }
+
+  .texto-biografia .destacado {
+    font-size: 18px;
+    display: inline-block;   /* Se comporta como bloque en línea */
+    max-width: 100%;         /* Ocupa el ancho disponible */
+  }
+
+  .texto-biografia .parrafo-normal {
+    font-size: 16px;
+  }
+}

@@ -1,45 +1,66 @@
 .latest-work {
-    padding: 150px 40px;
-    font-family: sans-serif;
+  padding: 150px 40px;
+  font-family: sans-serif;
+}
+
+.latest-work h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #2D2D2D;
+}
+
+.lista-proyectos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.proyecto {
+  text-align: left;
+}
+
+.proyecto img {
+  width: 80%;        /* 80% del ancho */
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: block;
+}
+
+.proyecto h3 {
+  margin: 5px 0;
+  font-size: 18px;
+  color: #2D2D2D;
+}
+
+.proyecto p {
+  font-size: 14px;
+  color: #2D2D2D;
+}
+
+@media (max-width: 768px) {
+  /* Ajusta padding general */
+  .latest-work {
+    padding: 60px 20px; 
   }
-  
-  .latest-work h2 {
-    font-size: 32px;
+
+  /* De 3 columnas a 1 columna */
+  .lista-proyectos {
+    grid-template-columns: 1fr;
+    gap: 30px;        
+    padding: 0;     
+  }
+
+  .proyecto {
     text-align: center;
-    margin-bottom: 40px;
-    color: #2D2D2D;
   }
-  
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 👈 Exactamente 3 columnas */
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+
+  .proyecto img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 15px auto;
   }
-  
-  
-  .project {
-    text-align: left;
-  }
-  
-  .project img {
-    width: 80%;        /* 👈 Reduce el tamaño al 80% del ancho del contenedor */
-    margin-bottom: 10px;
-    border-radius: 8px;
-    display: block;
-  }
-  
-  
-  .project h3 {
-    margin: 5px 0;
-    font-size: 18px;
-    color: #2D2D2D;
-  }
-  
-  .project p {
-    font-size: 14px;
-    color: #2D2D2D;
-  }
-  
+}

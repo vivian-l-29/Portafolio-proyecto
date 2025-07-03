@@ -1,78 +1,76 @@
 .clients {
-    padding: 60px 40px;
-    font-family: sans-serif;
-    text-align: center;
-  }
-  
-  .clients h2 {
-    font-size: 32px;
-    margin-bottom: 50px;
-    color: #2D2D2D;
-  }
-  
-  .clients-grid {
-    display: flex;
-    justify-content: center;
-    gap: 90px;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-    
-  }
-  
-  .testimonial {
-    width: 300px; /* ✅ Menor ancho fijo */
-    height: 320px; /* ✅ Más alta */
-    background-color: #FFFCF5; /* Fondo blanco */
-    border: 1px solid #FFD285; /* Borde crema */
-    border-radius: 4px;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .testimonial p {
-    font-size: 17px;
-    font-weight: bold;  /* ✅ Descripción destacada */
-    color: #2D2D2D;
-    margin-bottom: 25px;
-    line-height: 1.5;
-  }
-  
-  .client-info {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-  
-  .client-info img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  }
-  
-  .text-info {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.3;
-  }
-  
-  .stars {
-    font-size: 24px;
-    font-weight: bold;
-    color: #2D2D2D;
-  }
-  
-  .name {
-    font-size: 14px;
-    color: #2D2D2D;
-  }
-  
-  .company {
-    font-size: 13px;
-    color: #2D2D2D;
-  }
-  
+  padding: 60px 40px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.clients h2 {
+  font-size: 32px;
+  margin-bottom: 50px;
+  color: #2D2D2D;
+}
+
+.lista-clientes {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonio {
+  width: 300px; 
+  height: 320px;
+  background-color: #FFFCF5; 
+  border: 1px solid #FFD285; 
+  border-radius: 4px;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonio p {
+  font-size: 17px;
+  font-weight: bold;  
+  color: #2D2D2D;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.info-cliente {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.info-cliente img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.info-texto {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+
+.estrellas {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2D2D2D;
+}
+
+.nombre {
+  font-size: 14px;
+  color: #2D2D2D;
+}
+
+.empresa {
+  font-size: 13px;
+  color: #2D2D2D;
+}
